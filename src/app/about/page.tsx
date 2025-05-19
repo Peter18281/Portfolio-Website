@@ -1,103 +1,59 @@
 import React from 'react'
-import Navigation from '@/components/Navigation'
+import Link from 'next/link'
 
 export default function About() {
   return (
-    <div className="flex flex-col min-h-screen">
-      <Navigation />
-      <main className="flex-grow">
-        {/* About Hero Section */}
-        <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white dark:bg-gray-800">
-          <div className="max-w-7xl mx-auto">
+    <div className="min-h-screen bg-white dark:bg-gray-800">
+      {/* Hero Section */}
+      <section className="py-4 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto">
+          <div className="flex justify-between items-center">
+            <div className="flex-1"></div>
             <div className="text-center">
               <h1 className="text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white sm:text-5xl md:text-6xl">
-                About Me
+                Resume
+                <span className="block w-24 h-1 bg-teal-600 dark:bg-teal-400 mx-auto mt-4"></span>
               </h1>
-              <p className="mt-3 max-w-md mx-auto text-base text-gray-500 dark:text-gray-300 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
-                Learn more about my journey, skills, and what drives me to create exceptional digital experiences.
-              </p>
+            </div>
+            <div className="flex-1 flex justify-end">
+              <a
+                href="https://docs.google.com/document/d/1SfAACqm635MVEExBaT0STS5uzRux1kxwd1LT7_FCzBc/export?format=pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-teal-600 hover:bg-teal-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teal-500"
+              >
+                <svg
+                  className="mr-2 h-5 w-5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
+                  />
+                </svg>
+                Download PDF
+              </a>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        {/* Professional Background */}
-        <section className="py-12 px-4 sm:px-6 lg:px-8 bg-gray-50 dark:bg-gray-900">
-          <div className="max-w-7xl mx-auto">
-            <h2 className="text-3xl font-extrabold text-gray-900 dark:text-white sm:text-4xl">
-              Professional Background
-            </h2>
-            <div className="mt-8 space-y-8">
-              <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6">
-                <h3 className="text-xl font-semibold text-gray-900 dark:text-white">Senior Full Stack Developer</h3>
-                <p className="mt-2 text-gray-500 dark:text-gray-300">Company Name • 2020 - Present</p>
-                <p className="mt-4 text-gray-600 dark:text-gray-400">
-                  Led the development of multiple web applications using modern technologies and best practices.
-                  Collaborated with cross-functional teams to deliver high-quality solutions.
-                </p>
-              </div>
-              {/* Add more experience items as needed */}
-            </div>
+      {/* Resume Section */}
+      <section className="pt-8 px-4 sm:px-6 lg:px-8 bg-gray-100 dark:bg-gray-900">
+        <div className="max-w-7xl mx-auto">
+          <div className="bg-white dark:bg-gray-800 shadow rounded-lg overflow-hidden">
+            <iframe
+              src="https://docs.google.com/document/d/1SfAACqm635MVEExBaT0STS5uzRux1kxwd1LT7_FCzBc/preview"
+              className="w-full h-[1000px]"
+              frameBorder="0"
+            />
           </div>
-        </section>
-
-        {/* Education */}
-        <section className="py-12 px-4 sm:px-6 lg:px-8 bg-white dark:bg-gray-800">
-          <div className="max-w-7xl mx-auto">
-            <h2 className="text-3xl font-extrabold text-gray-900 dark:text-white sm:text-4xl">
-              Education
-            </h2>
-            <div className="mt-8 space-y-8">
-              <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6">
-                <h3 className="text-xl font-semibold text-gray-900 dark:text-white">Bachelor of Science in Computer Science</h3>
-                <p className="mt-2 text-gray-500 dark:text-gray-300">University Name • 2016 - 2020</p>
-                <p className="mt-4 text-gray-600 dark:text-gray-400">
-                  Focused on software engineering, data structures, and algorithms.
-                  Participated in various hackathons and coding competitions.
-                </p>
-              </div>
-              {/* Add more education items as needed */}
-            </div>
-          </div>
-        </section>
-
-        {/* Skills */}
-        <section className="py-12 px-4 sm:px-6 lg:px-8 bg-gray-50 dark:bg-gray-900">
-          <div className="max-w-7xl mx-auto">
-            <h2 className="text-3xl font-extrabold text-gray-900 dark:text-white sm:text-4xl">
-              Skills
-            </h2>
-            <div className="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-              <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6">
-                <h3 className="text-xl font-semibold text-gray-900 dark:text-white">Frontend Development</h3>
-                <ul className="mt-4 space-y-2 text-gray-600 dark:text-gray-400">
-                  <li>• React.js / Next.js</li>
-                  <li>• TypeScript</li>
-                  <li>• Tailwind CSS</li>
-                  <li>• HTML5 / CSS3</li>
-                </ul>
-              </div>
-              <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6">
-                <h3 className="text-xl font-semibold text-gray-900 dark:text-white">Backend Development</h3>
-                <ul className="mt-4 space-y-2 text-gray-600 dark:text-gray-400">
-                  <li>• Node.js</li>
-                  <li>• Python</li>
-                  <li>• SQL / NoSQL</li>
-                  <li>• RESTful APIs</li>
-                </ul>
-              </div>
-              <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6">
-                <h3 className="text-xl font-semibold text-gray-900 dark:text-white">Tools & Technologies</h3>
-                <ul className="mt-4 space-y-2 text-gray-600 dark:text-gray-400">
-                  <li>• Git / GitHub</li>
-                  <li>• Docker</li>
-                  <li>• AWS</li>
-                  <li>• CI/CD</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </section>
-      </main>
+        </div>
+      </section>
     </div>
   )
 } 

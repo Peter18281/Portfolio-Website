@@ -1,13 +1,14 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
-import Navigation from '@/components/Navigation'
+import Navbar from '@/components/Navigation'
+import Footer from '@/components/Footer'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Your Name - Portfolio',
-  description: 'Personal portfolio website showcasing my work and experience',
+  title: 'Peter Preuschoff - Portfolio',
+  description: 'Full Stack Developer Portfolio',
 }
 
 export default function RootLayout({
@@ -17,11 +18,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <Navigation />
-        <main className="min-h-screen bg-gray-50 dark:bg-gray-900">
-          {children}
-        </main>
+      <body className={`${inter.className} bg-white dark:bg-gray-800`}>
+        <div className="flex flex-col min-h-screen">
+          <Navbar />
+          <main className="flex-grow pt-16">
+            {children}
+          </main>
+          <Footer />
+        </div>
       </body>
     </html>
   )
