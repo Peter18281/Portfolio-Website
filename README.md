@@ -14,7 +14,7 @@ A modern, responsive portfolio website built with Next.js, TypeScript, and Tailw
 - [TypeScript](https://www.typescriptlang.org/) - Type safety
 - [Tailwind CSS](https://tailwindcss.com/) - Styling
 - [React](https://reactjs.org/) - UI library
-- [Vercel](https://vercel.com/) - Deployment (recommended)
+- [Vercel](https://vercel.com/) - Deployment
 
 ## Contributing
 
