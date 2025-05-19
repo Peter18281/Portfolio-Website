@@ -2,6 +2,8 @@ import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import minimaFighter from '@/img/minimafighter.avif'
+import joinlobby from '@/img/joinlobby.png'
+import ingame from '@/img/ingame.png'
 
 const technologies = [
   'Unity',
@@ -84,7 +86,7 @@ export default function MinimaFighterProject() {
               </div>
               <div className="relative aspect-video rounded-lg overflow-hidden shadow-lg">
                 <Image
-                  src={minimaFighter}
+                  src={joinlobby}
                   alt="Character Selection"
                   fill
                   className="object-cover"
@@ -92,18 +94,19 @@ export default function MinimaFighterProject() {
               </div>
               <div className="relative aspect-video rounded-lg overflow-hidden shadow-lg">
                 <Image
-                  src={minimaFighter}
+                  src={ingame}
                   alt="Special Moves"
                   fill
                   className="object-cover"
                 />
               </div>
               <div className="relative aspect-video rounded-lg overflow-hidden shadow-lg">
-                <Image
-                  src={minimaFighter}
-                  alt="Ranking System"
-                  fill
-                  className="object-cover"
+                <iframe
+                  src="https://www.youtube.com/embed/kqzpIgrluU4"
+                  title="Minima Fighter Gameplay"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  className="absolute inset-0 w-full h-full"
                 />
               </div>
             </div>

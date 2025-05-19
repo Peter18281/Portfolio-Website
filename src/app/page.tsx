@@ -47,7 +47,7 @@ export default function Home() {
                     <div className="absolute bottom-0 left-0 right-0 p-6 lg:p-8">
                       <h3 className="text-2xl font-bold text-white drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)]">La Fomo</h3>
                       <p className="mt-4 text-gray-200 drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)]">
-                        Brief description of the project and its key features.
+                      An app to showcase a curated list of the best events in London.
                       </p>
                       <div className="mt-6">
                         <div className="flex flex-wrap gap-2">
