@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-import moop from '@/img/MOOP.png'
+import moop from '@/img/moop1.png'
 import moop2 from '@/img/moop2.png'
 import moop3 from '@/img/moop3.png'
 import moop4 from '@/img/moop4.png'
@@ -80,36 +80,32 @@ export default function MoopProject() {
           <div className="max-w-7xl mx-auto">
             <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-8">Project Gallery</h2>
             <span className="block w-16 h-1 bg-teal-600 dark:bg-teal-400 mb-8"></span>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <div className="relative aspect-video rounded-lg overflow-hidden shadow-lg">
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+              <div className="relative h-[590px] rounded-lg overflow-hidden shadow-lg">
                 <Image
                   src={moop}
                   alt="Event Discovery"
-                  fill
                   className="object-cover"
                 />
               </div>
-              <div className="relative aspect-video rounded-lg overflow-hidden shadow-lg">
+              <div className="relative h-[590px] rounded-lg overflow-hidden shadow-lg">
                 <Image
                   src={moop2}
                   alt="Event Creation"
-                  fill
                   className="object-cover"
                 />
               </div>
-              <div className="relative aspect-video rounded-lg overflow-hidden shadow-lg">
+              <div className="relative h-[590px] rounded-lg overflow-hidden shadow-lg">
                 <Image
                   src={moop3}
                   alt="User Profile"
-                  fill
                   className="object-cover"
                 />
               </div>
-              <div className="relative aspect-video rounded-lg overflow-hidden shadow-lg">
+              <div className="relative h-[590px] rounded-lg overflow-hidden shadow-lg">
                 <Image
                   src={moop4}
                   alt="Event Details"
-                  fill
                   className="object-cover"
                 />
               </div>

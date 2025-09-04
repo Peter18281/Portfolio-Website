@@ -1,10 +1,10 @@
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-import lafomo from '@/img/La-Fomo-logo.webp'
-import lafomo2 from '@/img/lafomo1.png'
-import lafomo3 from '@/img/lafomo2.png'
-import lafomo4 from '@/img/lafomo3.png'
+import lafomo from '@/img/lafomo1.png'
+import lafomo2 from '@/img/lafomo2.png'
+import lafomo3 from '@/img/lafomo3.png'
+import lafomo4 from '@/img/lafomo4.png'
 
 const technologies = [
   'React',
@@ -82,36 +82,32 @@ export default function LaFomoProject() {
           <div className="max-w-7xl mx-auto">
             <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-8">Project Gallery</h2>
             <span className="block w-16 h-1 bg-teal-600 dark:bg-teal-400 mb-8"></span>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <div className="relative aspect-video rounded-lg overflow-hidden shadow-lg">
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+              <div className="relative rounded-lg overflow-hidden shadow-lg">
                 <Image
                   src={lafomo}
                   alt="Project Screenshot 1"
-                  fill
                   className="object-cover"
                 />
               </div>
-              <div className="relative aspect-video rounded-lg overflow-hidden shadow-lg">
+              <div className="relative rounded-lg overflow-hidden shadow-lg">
                 <Image
                   src={lafomo2}
                   alt="Project Screenshot 2"
-                  fill
                   className="object-cover"
                 />
               </div>
-              <div className="relative aspect-video rounded-lg overflow-hidden shadow-lg">
+              <div className="relative rounded-lg overflow-hidden shadow-lg">
                 <Image
                   src={lafomo3}
                   alt="Project Screenshot 3"
-                  fill
                   className="object-cover"
                 />
               </div>
-              <div className="relative aspect-video rounded-lg overflow-hidden shadow-lg">
+              <div className="relative rounded-lg overflow-hidden shadow-lg">
                 <Image
                   src={lafomo4}
                   alt="Project Screenshot 4"
-                  fill
                   className="object-cover"
                 />
               </div>
