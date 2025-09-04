@@ -2,6 +2,9 @@ import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import moop from '@/img/MOOP.png'
+import moop2 from '@/img/moop2.png'
+import moop3 from '@/img/moop3.png'
+import moop4 from '@/img/moop4.png'
 
 const technologies = [
   'React',
@@ -88,7 +91,7 @@ export default function MoopProject() {
               </div>
               <div className="relative aspect-video rounded-lg overflow-hidden shadow-lg">
                 <Image
-                  src={moop}
+                  src={moop2}
                   alt="Event Creation"
                   fill
                   className="object-cover"
@@ -96,7 +99,7 @@ export default function MoopProject() {
               </div>
               <div className="relative aspect-video rounded-lg overflow-hidden shadow-lg">
                 <Image
-                  src={moop}
+                  src={moop3}
                   alt="User Profile"
                   fill
                   className="object-cover"
@@ -104,7 +107,7 @@ export default function MoopProject() {
               </div>
               <div className="relative aspect-video rounded-lg overflow-hidden shadow-lg">
                 <Image
-                  src={moop}
+                  src={moop4}
                   alt="Event Details"
                   fill
                   className="object-cover"

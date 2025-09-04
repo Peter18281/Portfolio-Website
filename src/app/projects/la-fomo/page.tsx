@@ -2,6 +2,9 @@ import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import lafomo from '@/img/La-Fomo-logo.webp'
+import lafomo2 from '@/img/lafomo1.png'
+import lafomo3 from '@/img/lafomo2.png'
+import lafomo4 from '@/img/lafomo3.png'
 
 const technologies = [
   'React',
@@ -90,7 +93,7 @@ export default function LaFomoProject() {
               </div>
               <div className="relative aspect-video rounded-lg overflow-hidden shadow-lg">
                 <Image
-                  src={lafomo}
+                  src={lafomo2}
                   alt="Project Screenshot 2"
                   fill
                   className="object-cover"
@@ -98,7 +101,7 @@ export default function LaFomoProject() {
               </div>
               <div className="relative aspect-video rounded-lg overflow-hidden shadow-lg">
                 <Image
-                  src={lafomo}
+                  src={lafomo3}
                   alt="Project Screenshot 3"
                   fill
                   className="object-cover"
@@ -106,7 +109,7 @@ export default function LaFomoProject() {
               </div>
               <div className="relative aspect-video rounded-lg overflow-hidden shadow-lg">
                 <Image
-                  src={lafomo}
+                  src={lafomo4}
                   alt="Project Screenshot 4"
                   fill
                   className="object-cover"

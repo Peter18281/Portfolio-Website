@@ -78,7 +78,7 @@ export default function Home() {
                         </div>
                       </div>
                       <div className="mt-8">
-                        <Link href="/projects/1" className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-teal-600/90 hover:bg-teal-700 backdrop-blur-sm">
+                        <Link href="/projects/la-fomo" className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-teal-600/90 hover:bg-teal-700 backdrop-blur-sm">
                           View Project
                           <svg className="ml-2 h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
