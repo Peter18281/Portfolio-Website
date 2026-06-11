@@ -47,7 +47,7 @@ export default function LaFomoProject() {
                 <span className="text-gray-400 dark:text-gray-500">Private</span>
               ) : (
                 <a
-                  href="https://github.com/yourusername/la-fomo"
+                  href="https://github.com/LaFomo/La-Fomo-App"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-green-600 dark:text-green-500 hover:underline"
