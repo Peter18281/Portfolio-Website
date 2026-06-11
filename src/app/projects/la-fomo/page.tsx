@@ -19,7 +19,7 @@ const technologies = [
 ]
 
 // Set this to true if the repository is private
-const isPrivate = true
+const isPrivate = false
 
 export default function LaFomoProject() {
   return (
